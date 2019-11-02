@@ -5,11 +5,12 @@
     }
     
     body {
-        font-family: 'Nanum Myeongjo', serif;
+        font-family: 'Fugaz One', cursive;
         background: #fff;
     }
     
     h1 {
+        font-family: 'Monoton', cursive;
         background: #ccffcc 90%;
         color: #000;
         margin: 0 0 30px 0;
