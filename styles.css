@@ -147,10 +147,12 @@ input::placeholder {
 
     .sbtn {
         background-color: green;
+        margin-right: 4px;
     }
 
     .rbtn {
         background-color: red;
+        margin-left: 4px;
     }
     
     .main-footer {
