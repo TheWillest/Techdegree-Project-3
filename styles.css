@@ -1,4 +1,4 @@
-/* GLOBAL STYLES */
+/* Global Styles */
 
 * {
     Box-sizing: border-box;
@@ -33,7 +33,6 @@
         margin-bottom: 30px;
         border: none;
     }
-    
       
     input[type="text"],
     input[type="email"],
@@ -50,14 +49,47 @@
         padding: 15px;
         width: 100%;
         background-color: #e8eeef;
-        color: #8a97a0;
+        color: #000;
         box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
         border-radius: 10px;
-        margin-bottom: 30px;
-      }
+        margin-bottom: 1em;
+        flex: 1;
+        resize: none;
+      }  
+
+/* Psuedo Styles */
+
+*:focus {
+    outline: none;
+  }
+
+input:focus,
+select:focus,
+textarea:focus {
+  transition: ease .2s;
+  transform: scale(1.02);
+  background-color: #a8e3e6;
+  transform-origin: 100% 0%;
+}
+
+.sbtn:hover,
+.rbtn:hover {
+  transform: scale(1.1);
+  transition: ease .2s;
+  cursor: pointer;
+}
+
+.resetButton:hover {
+  border-bottom: 5px solid #a42700;
+  background-color: #fb4545;
+}
+
+input::placeholder {
+    text-align: right;
+}
     
     
-    /* Wrap style */
+/* Wrap Styles */
     
     .container {
         width: 90%;
@@ -68,15 +100,15 @@
     }
     
     
-    /* Styles */
-    
+/* Class Styles */
+
     .header {
         font-size: 1.25em;
         font-weight: bold;
         margin: 20px 0;
         padding-top: 1em;
     }
-    
+
     .header2 {
         font-size: 1.25em;
         font-weight: bold;
@@ -88,15 +120,37 @@
     }
     
     .info {
-        border-bottom: 1px solid black;
+        border-bottom: 2px solid black;
         padding: 20px 20px;
     }
     
+    .info2 {
+        padding: 0 20px;
+    }
+
     .btn {
-        width: 100%;
-        padding: 20px 0;
+        text-align: center;
+        margin: 5px;
+        
     }
     
+    .sbtn,
+    .rbtn {
+        text-align: center;
+        padding: 15px 30px;
+        color: white;
+        margin-bottom: 1em;
+        font-size: 1em;
+        display: inline;
+    }
+
+    .sbtn {
+        background-color: green;
+    }
+
+    .rbtn {
+        background-color: red;
+    }
     
     .main-footer {
         background: #003366;
@@ -106,7 +160,8 @@
     }
     
     #zip {
-        max-width: 50%;
+        width: 50%;
+        margin-right: auto;
     }
 
     .info, 
@@ -114,6 +169,8 @@
     .zip-sec {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        flex: 1;
     }
     
     .info label {
@@ -124,11 +181,9 @@
         height: 50px;
     }
 
-    input::placeholder {
-        align-items: right;
-    }
+    
 
-    /* MEDIA QUERIES */
+    /* Media Queries */
     
     @media (min-width: 768px) {
     
@@ -136,7 +191,8 @@
             max-width: 800px;
         }
     
-        .info .flex-div {
+        .flex-div {
+            display: flex;
             flex-direction: row;
         }   
     
